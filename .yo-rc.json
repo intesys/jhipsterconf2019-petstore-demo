@@ -18,7 +18,7 @@
     "prodDatabaseType": "postgresql",
     "searchEngine": false,
     "messageBroker": false,
-    "serviceDiscoveryType": false,
+    "serviceDiscoveryType": "consul",
     "buildTool": "maven",
     "enableSwaggerCodegen": true,
     "jwtSecretKey": "ZTIyODE4ZTdhN2VmOTJhNTA3OWI3ZTU0ZWFkOGFlMTcwNjBkZGJlYTFiNWJjMmRhZWRjMGQ1MWRjYTE2MGY3MDkyYTBhNzIzNDAzYWIyYTMzZTBiNzYyZjcwZWJlMTEyYzJmNWFkMDgzZTk3ODk2Zjc3ZmZmYzg4YjA5ZDQwYzQ=",
