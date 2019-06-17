@@ -782,10 +782,19 @@
                                 <modelPackage>it.intesys.jhipetstore.web.api.model</modelPackage>
                                 <supportingFilesToGenerate>ApiUtil.java</supportingFilesToGenerate>
                                 <validateSpec>true</validateSpec>
+                                <modelNameSuffix>ApiDTO</modelNameSuffix>
                                 <configOptions>
                                     <delegatePattern>true</delegatePattern>
                                     <title>jhipetstore</title>
+                                    <useTags>true</useTags>
                                 </configOptions>
+                                <!-- tells swagger codegen to use instant instead of OffsetDateTime -->
+                                <typeMappings>
+                                    <typeMapping>OffsetDateTime=Instant</typeMapping>
+                                </typeMappings>
+                                <importMappings>
+                                    <importMapping>java.time.OffsetDateTime=java.time.Instant</importMapping>
+                                </importMappings>
                             </configuration>
                         </execution>
                     </executions>
