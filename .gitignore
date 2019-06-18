@@ -143,3 +143,8 @@ Desktop.ini
 # ESLint
 ######################
 .eslintcache
+
+######################
+# Openapi Generated spec files
+######################
+openapi-specs/

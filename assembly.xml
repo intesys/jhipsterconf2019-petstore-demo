@@ -1,0 +1,14 @@
+<assembly>
+    <id>openapi-specs</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+
+    <fileSets>
+        <fileSet>
+            <directory>openapi-specs/</directory>
+            <outputDirectory/>
+        </fileSet>
+    </fileSets>
+
+</assembly>

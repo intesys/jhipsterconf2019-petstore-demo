@@ -2,6 +2,8 @@ openapi: '3.0.0'
 info:
   version: 1.0.0
   title: Swagger Jhipster Petstore
+servers:
+  - url: http://localhost:8080/api/public
 paths:
   /pets:
     get:
