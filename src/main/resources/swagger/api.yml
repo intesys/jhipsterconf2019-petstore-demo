@@ -6,9 +6,9 @@ info:
   version: 0.0.1
 servers:
   - url: http://localhost:8080
-    description: Developpement server
+    description: Development server
   - url: https://localhost:8080
-    description: Developpement server with TLS Profile
+    description: Development server with TLS Profile
 paths: {}
 
 components:

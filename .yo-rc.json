@@ -3,7 +3,7 @@
     "promptValues": {
       "packageName": "it.intesys.jhipetstore"
     },
-    "jhipsterVersion": "6.1.0",
+    "jhipsterVersion": "6.1.1",
     "applicationType": "monolith",
     "baseName": "jhipetstore",
     "packageName": "it.intesys.jhipetstore",
