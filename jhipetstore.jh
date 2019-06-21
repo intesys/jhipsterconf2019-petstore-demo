@@ -1,0 +1,8 @@
+// JDL definition for application 'jhipetstore' generated with command 'jhipster export-jdl'
+
+entity Pet {
+  name String required maxlength(100),
+  tags String maxlength(150)
+}
+
+paginate Pet with pagination
