@@ -18,15 +18,16 @@ spring:
     name: jhipetstore
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:mem:jhipetstore;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MULTI_THREADED=FALSE
+    url: jdbc:tc:postgresql:11.3://localhost:5432/jhipetstore
     name:
     username:
     password:
     hikari:
       auto-commit: false
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
   jpa:
-    database-platform: io.github.jhipster.domain.util.FixedH2Dialect
-    database: H2
+    database-platform: io.github.jhipster.domain.util.FixedPostgreSQL95Dialect
+    database: postgresql
     open-in-view: false
     show-sql: false
     hibernate:
