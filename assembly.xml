@@ -6,7 +6,7 @@
 
     <fileSets>
         <fileSet>
-            <directory>openapi-specs/</directory>
+            <directory>target/openapi-specs/</directory>
             <outputDirectory/>
         </fileSet>
     </fileSets>

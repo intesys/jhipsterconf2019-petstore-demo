@@ -467,7 +467,7 @@
                 <executions>
                     <execution>
                         <id>make-assembly</id>
-                        <phase>package</phase>
+                        <phase>verify</phase>
                         <goals>
                             <goal>single</goal>
                         </goals>

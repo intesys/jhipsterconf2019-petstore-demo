@@ -2,9 +2,11 @@ package it.intesys.jhipetstore.config;
 
 import com.fasterxml.classmate.TypeResolver;
 import com.google.common.base.Predicates;
+import io.github.jhipster.config.JHipsterConstants;
 import io.github.jhipster.config.JHipsterProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.http.ResponseEntity;
 import org.zalando.problem.Problem;
 import org.zalando.problem.StatusType;
@@ -18,6 +20,7 @@ import java.util.ArrayList;
 import static springfox.documentation.builders.PathSelectors.regex;
 
 @Configuration
+@Profile(JHipsterConstants.SPRING_PROFILE_SWAGGER)
 public class CustomSwaggerConfiguration {
 
     private final JHipsterProperties.Swagger properties;
