@@ -142,7 +142,7 @@ jhipster:
     contact-name:
     contact-url:
     contact-email:
-    license:
+    license: Apache 2.0
     license-url:
 # ===================================================================
 # Application specific properties
