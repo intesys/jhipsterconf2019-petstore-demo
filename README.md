@@ -1,3 +1,21 @@
+# jhipetstore - Jhipster Conf Demo
+
+This is the code showed at Jhipsterconf 2019. Here you can find the [slides](https://www.slideshare.net/Intesys_Srl/jhipster-beyond-crud-jhipster-conf-2019).
+
+This repo shows how the [generator-jhipster-apiutils](https://www.npmjs.com/package/generator-jhipster-apiutils) module works:
+
+- how to serve the OpenAPI/Swagger `api.yml` specifications statically a [custom controller](https://github.com/intesys/jhipsterconf2019-petstore-demo/blob/master/src/main/java/it/intesys/jhipetstore/web/OpenApiController.java) and a [custom service](https://github.com/intesys/jhipsterconf2019-petstore-demo/blob/master/src/main/java/it/intesys/jhipetstore/service/OpenApiService.java)
+- how to replace swagger ui 2 with swagger ui 3, using iframe (see the [index.html](https://github.com/intesys/jhipsterconf2019-petstore-demo/blob/master/src/main/webapp/swagger-ui/index.html) file
+- how to show the api version in the `/management/info` endpoint (see [ApiVersionContributor.java](https://github.com/intesys/jhipsterconf2019-petstore-demo/blob/master/src/main/java/it/intesys/jhipetstore/config/apidocs/ApiVersionContributor.java))
+- how to add the api version as tag into your service discovery tools ([consul](https://github.com/intesys/jhipsterconf2019-petstore-demo/blob/master/src/main/java/it/intesys/jhipetstore/config/apidocs/ApiFirstConsulCustomizer.java#L26) and [eureka]())
+- how you can use Fabio load balancer by simpling sending [special tags to consul](https://github.com/intesys/jhipsterconf2019-petstore-demo/blob/master/src/main/java/it/intesys/jhipetstore/config/apidocs/ApiFirstConsulCustomizer.java#L28)
+
+The following customizations have been coded manually:
+
+- how to split a single generate swagger file into multiple swagger specifications, using [multiple Springfox Dockets](https://github.com/intesys/jhipsterconf2019-petstore-demo/blob/master/src/main/java/it/intesys/jhipetstore/config/CustomSwaggerConfiguration.java)
+- how to export the generated swagger specification [using an integration test](https://github.com/intesys/jhipsterconf2019-petstore-demo/blob/master/src/test/java/it/intesys/jhipetstore/apispec/OpenApiSpecGeneratorIT.java)
+- integration with Testcontainers (see [commit](https://github.com/intesys/jhipsterconf2019-petstore-demo/commit/7e2d9ea0f7ea9b21fdcfed8d753e9a760a8188a8))
+
 # jhipetstore
 
 This application was generated using JHipster 6.1.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v6.1.1](https://www.jhipster.tech/documentation-archive/v6.1.1).
