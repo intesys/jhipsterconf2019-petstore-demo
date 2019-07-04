@@ -4,7 +4,7 @@ This is the code showed at Jhipsterconf 2019. Here you can find the [slides](htt
 
 This repo shows how the [generator-jhipster-apiutils](https://www.npmjs.com/package/generator-jhipster-apiutils) module works:
 
-- how to serve the OpenAPI/Swagger `api.yml` specifications statically a [custom controller](https://github.com/intesys/jhipsterconf2019-petstore-demo/blob/master/src/main/java/it/intesys/jhipetstore/web/OpenApiController.java) and a [custom service](https://github.com/intesys/jhipsterconf2019-petstore-demo/blob/master/src/main/java/it/intesys/jhipetstore/service/OpenApiService.java)
+- how to serve the OpenAPI/Swagger `api.yml` specifications statically creating a [custom controller](https://github.com/intesys/jhipsterconf2019-petstore-demo/blob/master/src/main/java/it/intesys/jhipetstore/web/OpenApiController.java) and a [custom service](https://github.com/intesys/jhipsterconf2019-petstore-demo/blob/master/src/main/java/it/intesys/jhipetstore/service/OpenApiService.java)
 - how to replace swagger ui 2 with swagger ui 3, using iframe (see the [index.html](https://github.com/intesys/jhipsterconf2019-petstore-demo/blob/master/src/main/webapp/swagger-ui/index.html) file
 - how to show the api version in the `/management/info` endpoint (see [ApiVersionContributor.java](https://github.com/intesys/jhipsterconf2019-petstore-demo/blob/master/src/main/java/it/intesys/jhipetstore/config/apidocs/ApiVersionContributor.java))
 - how to add the api version as tag into your service discovery tools ([consul](https://github.com/intesys/jhipsterconf2019-petstore-demo/blob/master/src/main/java/it/intesys/jhipetstore/config/apidocs/ApiFirstConsulCustomizer.java#L26) and [eureka]())
